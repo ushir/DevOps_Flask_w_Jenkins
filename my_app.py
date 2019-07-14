@@ -1,4 +1,6 @@
-''' Simple Flask Application '''
+''' Simple Flask Application 
+author: Robert Simari
+'''
 
 from flask import Flask
 
