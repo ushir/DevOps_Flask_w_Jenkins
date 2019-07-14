@@ -1,5 +1,5 @@
 ''' Simple Flask Application 
-author: Robert Simari
+author: Robert Simari (rsimari)
 '''
 
 from flask import Flask
