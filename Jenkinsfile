@@ -12,8 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-		sh 'export PYTHONPATH=$PYTHONPATH:$WORKSPACE/src'
-		sh 'pytest tests/'
+		sh 'export PYTHONPATH=$PYTHONPATH:$WORKSPACE/src; pytest tests/'
             }
         }
         stage('Deploy') {
