@@ -1,8 +1,4 @@
 import pytest
-import sys
-
-sys.path.extend(['/Users/rsimari/DevOps/DevOps_App/Example_App'])
-
 import my_app
 
 @pytest.fixture
