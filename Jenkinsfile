@@ -5,14 +5,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		pip install -r requirements.txt
-		python setup.py build
+		sh 'pip install -r requirements.txt'
+		sh 'python setup.py build'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-		pytest
+		sh 'pytest'
             }
         }
         stage('Deploy') {
